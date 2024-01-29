@@ -21,11 +21,9 @@ export class PostsController {
         const { id } = req.params;
 
         const cachedPost = await redisClient.get(`post:${id}`);
-
         if (cachedPost) {
             return JSON.parse(cachedPost);
         }
-
 
         const post = await PostService.getPostById(Number(id));
 
