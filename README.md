@@ -1,6 +1,6 @@
-#Social Media Analytics 
+# Social Media Analytics 
 
-##SET-UP
+## SET-UP
   This Application uses a Sqlite database and ioredis-mock npm library as redis 
 ## Execution
   `npm run dev` to start the sever. 
