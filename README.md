@@ -9,3 +9,5 @@
   GET Analysis (GET /api/v1/posts/{id}/analysis/): Endpoint that returns the number of words and average word length in a post.
 
 ## Assumptions & Decisions
+1. Analysis Calcuation: The average world length calucation is done when the api is hit. Is for simulating some processing which cant be done in the background.
+2. Using ORM instead of SQL queries. Different databases have different dialects. Hence, making use of a ORM to make the application database agnostic
